@@ -79,8 +79,13 @@ const StackView = StackNavigator({
         },
         Home: {
             screen: Home,
-            navigationOptions: {
-                header: null
+            navigationOptions: ({navigation}) => {
+                return {
+                    headerTintColor: 'white',
+                    headerTransparent: true,
+                    headerStyle: {borderBottomWidth: 0, tintColor: '#FAFAFA'},
+                    headerText:"Doctor"
+                }
             }
         },
         Newsfeed: {

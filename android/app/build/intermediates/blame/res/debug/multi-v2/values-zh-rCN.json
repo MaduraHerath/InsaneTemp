@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/madura/Desktop/InsaneTemp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+            "outputFile": "/home/madura/Documents/InsaneTemp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
                     "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b5b754a1dac6ecd9c013be1b4d2121e3/res/values-zh-rCN/values-zh-rCN.xml",

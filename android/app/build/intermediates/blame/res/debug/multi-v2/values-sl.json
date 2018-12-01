@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/madura/Desktop/InsaneTemp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/home/madura/Documents/InsaneTemp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2e238a3c267b189747cbd00f42891542/res/values-sl/values-sl.xml",

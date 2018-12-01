@@ -1,159 +1,136 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View,TouchableHighlight} from 'react-native';
-
-
-import LinearGradient from 'react-native-linear-gradient';
+import {Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import InsInputText from "../../common/InsInputText";
-import InsImage from "../../common/InsImage";
-import InsButton from "../../common/InsButton";
-import SocialButtons from "../SocialButtons";
-import ResetPassword from "../passwordReset/resetPassword";
+import InsCard from "../../common/InsCard";
+import LinearGradient from "react-native-linear-gradient";
 
-var width = Dimensions.get('window').width;
-var height = Dimensions.get('window').height;
 
 export default class Home extends React.Component {
-
-    constructor() {
-        super();
-        this.state = {
-            input: '',
-            colors:[['#654ea3', '#654ea3'],['#FF416C', '#FF4B2B'],['#bc4e9c', '#f80759'],['#8E2DE2', '#4A00E0'],['#141E30', '#243B55'],['#16222A', '#3A6073']],
-            changeColor: 0
-
-
-        }
-
-    }
     componentDidMount() {
-        console.log("Color",this.state.changeColor)
-        this.setState({ changeColor: Math.floor(Math.random() * 5)})
-
     }
 
     render() {
-
-        let { changeColor } = this.state;
-        console.log("CHCHCHCHCHCHCH",changeColor)
         return (
-            <LinearGradient
-                colors={this.state.colors[4]}
-                start={{x: 0.0, y: 1.0}} end={{x: 1.0, y: 1.0}}
-            >
-                <View style={{width: width * 1, height: height * 1.3}}>
-                    <View>
-                        <InsImage resizeMode={'center'}/>
-                    </View>
-                    <View>
-                        <Text style={styles.welcome}>
-                            Buckmanity
-                        </Text></View>
-                    <InsInputText secureTextEntry={false}
-                                  textContentType={'username'}
-                                  placeholder={"Phone Number"}>
+            <View>
 
-                    </InsInputText>
-
-                    <InsInputText secureTextEntry={true}
-                                  textContentType={'password'}
-                                  placeholder={"Password"}>
-                    </InsInputText>
-                    <View style={styles.forget}>
-                        <Text style={styles.forget}>
-                            Those who dumb to remember their password
-
-                        </Text>
-                        <Text style={styles.centerWhiteText} onPress={() =>  {this.props.navigation.navigate('ResetPassword')}}>
-                            Click Here
-                        </Text>
-                    </View>
-
-                    <InsButton onNavigate ='Otp' {...this.props}>
-                        Login
-                    </InsButton>
-
-                    <Text style={styles.centerWhiteText}>OR</Text>
-
-                    <View style={{flexDirection: 'row'}}>
-                        <View style={{alignItems: 'flex-start'}}>
-                            <InsButton  onNavigate ="Otp" {...this.props}>
-                                SignUp
-                            </InsButton>
+                <View style={styles.instructions}>
+                    <LinearGradient style={styles.header}
+                                    colors={["#315AFF","#00D2FF"]}
+                                    start={{x: 0.0, y: 0.8}} end={{x: 1.0, y: 0.2}}>
+                        <View onPress={() => console.log("Clicked!")}
+                              style={{borderRadius: 10, padding: 2, margin: 10}}>
+                            {this.props.children}
 
                         </View>
-                        <View style={{alignItems: 'flex-end'}}>
-                            <SocialButtons/>
+
+                        <View style={{
+                            flexDirection: 'row',
+                            justifyContent: 'space-between'}}>
+                            <View style={{ flexDirection: 'column'}}>
+                                <Text style={styles.welcome}>
+                                    Doctors
+                                </Text>
+                            </View>
                         </View>
+                        <InsInputText secureTextEntry={false}
+                                      textContentType={'username'}
+                                      placeholder={"Specialized Category"}
+                                      borderRadius={24}
+                                      backgroundColor={"rgba(255, 255, 255, 0.25)"}
+                                      placeholderTextColor='#FAFAFA'>
+                        </InsInputText>
+                    </LinearGradient>
+                    <View style={{margin: 5}} onPress={() => this.props.navigation.navigate('Home')}>
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Home')}>
+                            <InsCard
+                                onPress={() => this.props.navigation.navigate('Home')}
+                                backgroundEndColor={"#F5F5F5"}
+                                backgroundStartColor={"#F5F5F5"}
+                                margin={5}>
+                                <Text style={{fontFamily: 'Arial', fontSize: 15, textAlign: 'right'}}>Madura
+                                    Herath</Text>
+                            </InsCard>
+                        </TouchableHighlight>
+                    </View>
+                    <View style={{margin: 5}} onPress={() => this.props.navigation.navigate('Home')}>
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Home')}>
+                            <InsCard
+
+                                backgroundEndColor={"#F5F5F5"}
+                                backgroundStartColor={"#F5F5F5"}
+                                margin={12}>
+                                <Text style={{fontFamily: 'Arial', fontSize: 15, textAlign: 'right'}}>Shihan
+                                    Anurudhdha</Text>
+                            </InsCard>
+                        </TouchableHighlight>
+                    </View>
+                    <View style={{margin: 5}} onPress={() => this.props.navigation.navigate('Home')}>
+                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Home')}>
+                            <InsCard
+                                onPress={() => this.props.navigation.navigate('Home')}
+                                backgroundEndColor={"#F5F5F5"}
+                                backgroundStartColor={"#F5F5F5"}
+                                margin={12}>
+                                <Text style={{fontFamily: 'Arial', fontSize: 15, textAlign: 'right'}}>L</Text>
+                            </InsCard>
+                        </TouchableHighlight>
                     </View>
                 </View>
-            </LinearGradient>
 
+            </View>
         );
     }
-
-
 }
-
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+    },
+    header:{
+        alignItems: 'center',
         backgroundColor: '#FAFAFA',
-        paddingTop: 10
+        padding: 6,
+        margin: 0,
+        borderBottomColor: 'white',
+        borderBottomLeftRadius:10,
+        borderBottomRightRadius:10,
     },
     welcome: {
         fontSize: 20,
         textAlign: 'center',
         margin: 10,
-        color: '#FAFAFA',
+        justifyContent: 'center',
+        color: 'white'
     },
     instructions: {
         textAlign: 'center',
-        color: '#FAFAFA',
+        color: '#333333',
+        justifyContent: 'center',
         marginBottom: 5,
     },
+
+    button: {
+        borderWidth: 1,
+        borderColor: 'rgba(0,0,0,0.2)',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 40,
+        height: 40,
+        backgroundColor: '#fff',
+        borderRadius: 100,
+        color: '#B24592',
+        margin: 5
+    },
+
     signup: {
         marginTop: 10,
         paddingTop: 5,
         borderRadius: 30,
+        backgroundColor: '#e53935'
 
-    },
-    text: {
 
-        bottom: 10,
-        position: 'absolute',
-        height: 40,
-        width: 200,
-        backgroundColor: 'rgba(244,67,54 ,0.6)',
-
-        paddingHorizontal: 10,
-        marginBottom: 10
-
-    },
-    button: {
-        alignItems: 'center',
-        padding: 10,
-        width: 3,
-        height: 3,
-        right: 0,
-        marginTop: 30
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-        color: 'white'
-    },
-    forget: {
-        color: 'white',
-        textAlign: 'center'
-    },
-
-    centerWhiteText: {
-        fontWeight: 'bold',
-        marginLeft: 5, color: 'white',
-        textAlign: 'center'
     }
 });
