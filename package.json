@@ -13,7 +13,7 @@
     "alt-container": "^1.1.1",
     "axios": "^0.18.0",
     "react-native-linear-gradient": "react-native-community/react-native-linear-gradient",
-    "react-native-vector-icons": "^5.0.0",
+    "react-native-vector-icons": "5.0.0",
     "react-navigation": "^2.14.2",
     "uuid": "^3.3.2"
   },

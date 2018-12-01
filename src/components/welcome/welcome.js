@@ -10,7 +10,7 @@ export default class Welcome extends React.Component {
         return (
 
             <LinearGradient style={styles.container}
-                            colors={['#B24592', '#F15F79']}
+                            colors={['#B993D6', '#8CA6DB']}
                             start={{x: 0.0, y: 1.0}} end={{x: 1.0, y: 0.2}}>
                 <View>
                     <Text style={styles.welcome}>
