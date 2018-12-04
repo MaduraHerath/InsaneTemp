@@ -3,6 +3,7 @@ import {Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import InsInputText from "../../common/InsInputText";
 import InsCard from "../../common/InsCard";
 import LinearGradient from "react-native-linear-gradient";
+import InsSpring from "../../common/InsSpring";
 
 
 export default class Home extends React.Component {
@@ -27,9 +28,11 @@ export default class Home extends React.Component {
                             flexDirection: 'row',
                             justifyContent: 'space-between'}}>
                             <View style={{ flexDirection: 'column'}}>
+                                <InsSpring>
                                 <Text style={styles.welcome}>
                                     Doctors
                                 </Text>
+                                </InsSpring>
                             </View>
                         </View>
                         <InsInputText secureTextEntry={false}

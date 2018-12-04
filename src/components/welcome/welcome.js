@@ -102,6 +102,7 @@ export default class Welcome extends React.Component {
                                       placeholderTextColor='#FAFAFA'>
                         </InsInputText>
                         </InsFade>
+                        <InsFade delay={600}>
                         <View style={{
                             flexDirection: "row",
                             alignItems: "center",
@@ -109,7 +110,7 @@ export default class Welcome extends React.Component {
                             width: "100%",
 
                         }}>
-                            <InsFade delay={600}>
+
                             <View style={{
                                 backgroundColor: "rgba(255, 255, 255, 0.25)",
                                 borderRadius: 30,
@@ -127,9 +128,9 @@ export default class Welcome extends React.Component {
                                     <Picker.Item label="Neurology" value="java"/>
                                 </Picker>
                             </View>
-                            </InsFade>
-                        </View>
 
+                        </View>
+                    </InsFade>
                         <DateTimePicker
                             isVisible={this.state.isDateTimePickerVisible}
                             onConfirm={this._handleDatePicked}
