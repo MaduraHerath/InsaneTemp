@@ -17,6 +17,8 @@ import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
 import LinearGradient from "react-native-linear-gradient";
 import DateTimePicker from 'react-native-modal-datetime-picker';
+import InsSpring from "../../common/InsSpring";
+import InsFade from "../../common/InsFade";
 
 var width = Dimensions.get('window').width;
 
@@ -52,6 +54,7 @@ export default class Welcome extends React.Component {
         return (
             <View>
                 <View style={styles.instructions}>
+                    <InsFade delay={200}>
                     <LinearGradient style={styles.header}
                                     colors={["#315AFF", "#00D2FF"]}
                                     start={{x: 0.0, y: 0.8}} end={{x: 1.0, y: 0.2}}>
@@ -67,15 +70,20 @@ export default class Welcome extends React.Component {
                             paddingHorizontal: 8
 
                         }}>
+                            <InsFade delay={450}>
                             <View style={{flexDirection: 'column', alignItems: "flex-start"}}>
                                 <Image source={require('../../images/logo.png')} resizeMode={this.resizeMode}
                                        style={{width: 50, height: 50, padding: 10}}/>
                             </View>
+                            </InsFade>
+                            <InsFade delay={500}>
                             <View style={{flexDirection: 'column'}}>
                                 <Text style={styles.welcome}>
                                     Home
                                 </Text>
                             </View>
+                            </InsFade>
+                            <InsFade delay={450}>
                             <View style={{flexDirection: 'column', alignItems: "flex-end", right: 0}}>
                                 {/*<TouchableHighlight style={styles.button}*/}
                                 {/*onPress={() => this.props.navigation.navigate('Home')}>*/}
@@ -83,7 +91,9 @@ export default class Welcome extends React.Component {
                                 {/*</TouchableHighlight>*/}
                                 <Icon name="chart-bar" size={30} color="#FAFAFA"/>
                             </View>
+                            </InsFade>
                         </View>
+                        <InsFade delay={600}>
                         <InsInputText secureTextEntry={false}
                                       textContentType={'username'}
                                       placeholder={"Name of the Doctor"}
@@ -91,6 +101,7 @@ export default class Welcome extends React.Component {
                                       backgroundColor={"rgba(255, 255, 255, 0.25)"}
                                       placeholderTextColor='#FAFAFA'>
                         </InsInputText>
+                        </InsFade>
                         <View style={{
                             flexDirection: "row",
                             alignItems: "center",
@@ -98,6 +109,7 @@ export default class Welcome extends React.Component {
                             width: "100%",
 
                         }}>
+                            <InsFade delay={600}>
                             <View style={{
                                 backgroundColor: "rgba(255, 255, 255, 0.25)",
                                 borderRadius: 30,
@@ -113,38 +125,9 @@ export default class Welcome extends React.Component {
                                     <Picker.Item label="Neurology" value="java"/>
                                     <Picker.Item label="Neurology" value="java"/>
                                     <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="Neurology" value="java"/>
-                                    <Picker.Item label="JavaScript" value="js"/>
                                 </Picker>
                             </View>
+                            </InsFade>
                         </View>
 
                         <DateTimePicker
@@ -181,67 +164,77 @@ export default class Welcome extends React.Component {
                         </View>
 
                     </LinearGradient>
+                    </InsFade>
                     <ScrollView contentContainerStyle={styles.contentContainer} bounces={true} bouncesZoom={true}>
                         <View style={{margin: 5}} onPress={() => this.props.navigation.navigate('Home')}>
-                            <InsCard
-                                onPress={() => this.props.navigation.navigate('Home')}
-                                backgroundEndColor={"#F5F5F5"}
-                                backgroundStartColor={"#F5F5F5"}
-                                margin={5}>
-                                <View style={{
-                                    position: "absolute",
-                                    right: 0
-                                }}>
-                                    {!this.state.isColllapsed &&
-                                    <Icon name="arrow-down" size={15} color="#607D8B"
+                            <InsSpring value={1}
+                                       delay={0}>
+                                <InsCard
+                                    onPress={() => this.props.navigation.navigate('Home')}
+                                    backgroundEndColor={"#F5F5F5"}
+                                    backgroundStartColor={"#F5F5F5"}
+                                    margin={5}>
+                                    <View style={{
+                                        position: "absolute",
+                                        right: 0
+                                    }}>
+                                        {!this.state.isColllapsed &&
+                                        <Icon name="arrow-down" size={15} color="#607D8B"
+                                              style={{textAlign: "right", padding: 10}}
+                                              onPress={this.collapsible.bind(this)}/>
+                                        }{this.state.isColllapsed &&
+                                    <Icon name="arrow-up" size={15} color="#607D8B"
                                           style={{textAlign: "right", padding: 10}}
                                           onPress={this.collapsible.bind(this)}/>
-                                    }{this.state.isColllapsed &&
-                                <Icon name="arrow-up" size={15} color="#607D8B"
-                                      style={{textAlign: "right", padding: 10}} onPress={this.collapsible.bind(this)}/>
-                                }
-                                </View>
-                                <View style={{flexDirection: "row", justifyContent: 'space-between'}}>
-                                    <View style={{flexDirection: 'column', alignItems: "flex-start"}}>
-                                        <TouchableHighlight onPress={() => this.props.navigation.navigate('Home')}>
-                                            <Image source={require('../../images/doctor.png')}
-                                                   resizeMode={this.resizeMode}
-                                                   style={{
-                                                       width: 50,
-                                                       height: 50,
-                                                       alignItems: "flex-start",
-                                                       borderRadius: 64
-                                                   }}/>
-                                        </TouchableHighlight>
+                                    }
                                     </View>
-                                    <View style={{flexDirection: 'column', padding: 10, width: width * 0.8}}>
-                                        <View style={{flexDirection: 'row'}}>
-                                            <View style={styles.cardName}>
-                                                <Text style={{fontFamily: 'Arial', fontSize: 15, textAlign: 'right'}}>Madura
-                                                    Herath</Text>
+                                    <View style={{flexDirection: "row", justifyContent: 'space-between'}}>
+                                        <View style={{flexDirection: 'column', alignItems: "flex-start"}}>
+                                            <TouchableHighlight onPress={() => this.props.navigation.navigate('Home')}>
+                                                <InsSpring value={1}
+                                                           delay={600}>
+                                                    <Image source={require('../../images/doctor.png')}
+                                                           resizeMode={this.resizeMode}
+                                                           style={{
+                                                               width: 50,
+                                                               height: 50,
+                                                               alignItems: "flex-start",
+                                                               borderRadius: 64
+                                                           }}/>
+                                                </InsSpring>
+
+                                            </TouchableHighlight>
+                                        </View>
+                                        <View style={{flexDirection: 'column', padding: 10, width: width * 0.8}}>
+                                            <View style={{flexDirection: 'row'}}>
+                                                <View style={styles.cardName}>
+                                                    <Text
+                                                        style={{fontFamily: 'Arial', fontSize: 15, textAlign: 'right'}}>Madura
+                                                        Herath</Text>
+                                                </View>
+
+                                                <Text style={{
+                                                    fontFamily: 'Arial',
+                                                    fontSize: 13,
+                                                    textAlign: 'right',
+                                                    padding: 1
+                                                }}>(Cardiology)</Text>
+
                                             </View>
+                                            <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
 
-                                            <Text style={{
-                                                fontFamily: 'Arial',
-                                                fontSize: 13,
-                                                textAlign: 'right',
-                                                padding: 1
-                                            }}>(Cardiology)</Text>
-
+                                                <Text> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                                    pulvinar semper erat non imperdiet. </Text>
+                                            </View>
+                                            {this.state.isColllapsed &&
+                                            <View>
+                                                <Text> More Details </Text>
+                                            </View>
+                                            }
                                         </View>
-                                        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-
-                                            <Text> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                                                pulvinar semper erat non imperdiet. </Text>
-                                        </View>
-                                        {this.state.isColllapsed &&
-                                        <View>
-                                            <Text> More Details </Text>
-                                        </View>
-                                        }
                                     </View>
-                                </View>
-                            </InsCard>
+                                </InsCard>
+                            </InsSpring>
                         </View>
 
                     </ScrollView>
