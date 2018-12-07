@@ -31,6 +31,7 @@ export default class Welcome extends React.Component {
         super(props);
         this.state = {
             isColllapsed: false,
+            date:"",
             isDateTimePickerVisible: false
         };
     };
@@ -41,16 +42,22 @@ export default class Welcome extends React.Component {
         })
     };
 
+
+
     _showDateTimePicker = () => this.setState({isDateTimePickerVisible: true});
 
     _hideDateTimePicker = () => this.setState({isDateTimePickerVisible: false});
 
+
+
     _handleDatePicked = (date) => {
-        console.log('A date has been picked: ', date);
+        this.state.date = date.toString();
+        console.log('A date has been picked: ', date.toString());
         this._hideDateTimePicker();
     };
 
     render() {
+        console.log(this.state.date)
         return (
             <View>
                 <View style={styles.instructions}>
@@ -115,6 +122,7 @@ export default class Welcome extends React.Component {
                                 backgroundColor: "rgba(255, 255, 255, 0.25)",
                                 borderRadius: 30,
                                 height: 40,
+                                paddingLeft:10,
                                 width: "80%",
                                 justifyContent: "center"
                             }}>
@@ -149,11 +157,11 @@ export default class Welcome extends React.Component {
                                 borderRadius: 30,
                                 height: 40,
                                 width: "80%",
-                                padding: 6,
+                                padding: 10,
                                 justifyContent: "center"
                             }}>
                                 <TouchableOpacity onPress={this._showDateTimePicker}>
-                                    <Text style={{color: "#FAFAFA"}}>Selected Date </Text>
+                                    <Text style={{color: "#FAFAFA",paddingLeft:10}}>{this.state.date} </Text>
                                     <Icon
                                         style={styles.icon}
                                         name='calendar-o'

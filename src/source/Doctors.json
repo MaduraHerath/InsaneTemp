@@ -1,0 +1,32 @@
+{
+  "doctors": [
+    {
+      "name" : "Dr Madura Herath",
+      "age" : 36,
+      "timwSlots": "Friday",
+      "imageURL":"",
+      "description": "This is the mother fucking description you idiots"
+    },
+    {
+      "name" : "Fathima Fonzeka",
+      "age" : 30,
+      "timwSlots": "Friday",
+      "imageURL":"",
+      "description": "This is the mother fucking description you idiots"
+    },
+    {
+      "name" : "Sudath Weththasinghe",
+      "age" : 29,
+      "timwSlots": "Friday",
+      "imageURL":"",
+      "description": "This is the mother fucking description you idiots"
+    },
+    {
+      "name" : "Rohana Baddage",
+      "age" : 62,
+      "timwSlots": "Friday",
+      "imageURL":"",
+      "description": "This is the mother fucking description you idiots"
+    }
+  ]
+}
