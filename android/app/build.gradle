@@ -72,6 +72,12 @@ import com.android.build.OutputFile
  * ]
  */
 
+project.ext.vectoricons = [
+        iconFontNames: [ 'MaterialIcons.ttf', 'EvilIcons.ttf' ] // Name of the font files you want to copy
+]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 project.ext.react = [
     entryFile: "index.js"
 ]
@@ -137,8 +143,10 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-linear-gradient')
-    compile project(':react-native-vector-icons')
+    compile project(':lottie-react-native')
+    implementation project(':lottie-react-native')
+    implementation project(':react-native-linear-gradient')
+    implementation project(':react-native-vector-icons')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules

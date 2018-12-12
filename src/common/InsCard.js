@@ -36,7 +36,7 @@ export default class InsCard extends Component {
             <LinearGradient style={styles.container}
                             colors={[this.props.backgroundEndColor,this.props.backgroundStartColor]}
                             start={{x: 0.0, y: 0.8}} end={{x: 1.0, y: 0.2}}>
-                <View onPress={() => console.log("Clicked!")}
+                <View
                       style={{borderRadius: 10, padding: 2, margin: 10,paddingVertical:6}}>
                     {this.props.children}
                 </View>

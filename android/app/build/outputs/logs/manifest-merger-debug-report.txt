@@ -4,28 +4,30 @@ ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifes
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-linear-gradient] /home/madura/Documents/InsaneTemp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] /home/madura/Documents/InsaneTemp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b5b754a1dac6ecd9c013be1b4d2121e3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/671b2cbfd64d079ad7e5cf8922dbc2a5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/3b4c606fb0d7cc3eb55f947ad5f1b084/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/933b163d5f8969ac2fa975671141d064/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b9ef3c25a338b5c4fe034b69592d6602/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/29fc7144d16da17e1b7c1da816efa42a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2e238a3c267b189747cbd00f42891542/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fresco-1.10.0.aar/3658e6d364d502621fac444a4b424724/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b90381c50ea88475e2713df3d619b87b/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/drawee-1.10.0.aar/17e2750502a2a6a6628bfe66ac22d543/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/f09483dabdabf00b4c67aea9117911cf/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/0c91f8d08427aa4f935575e3f2db5d2d/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/671dcf7bea7f00ff4305efb90d36994d/AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r174650] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/android-jsc-r174650.aar/fa2037cd3b1e3bcd31d840c91796790f/AndroidManifest.xml:1:1-3:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/afad70d304f18d564951b81ac1d8c3fa/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/754605b84f56c476245dbb6b830a2e59/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/76822869b12e694a849f2e1438653a54/AndroidManifest.xml:2:1-9:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6e11392aa88093f52db2775de5c3f5f4/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/36c31011e59c68a2b247f1fb297ff055/AndroidManifest.xml:17:1-22:12
+MERGED from [:lottie-react-native] /home/madura/Documents/InsaneTemp/node_modules/lottie-react-native/src/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-linear-gradient] /home/madura/Documents/InsaneTemp/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] /home/madura/Documents/InsaneTemp/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:2:1-15:12
+MERGED from [com.airbnb.android:lottie:2.5.5] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/lottie-2.5.5.aar/a4c85caadfe5530574d141d7f9399103/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f919c125aa97e56370db3ef5a0cc02f3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/03768286ba73d6856c88e163168331d1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/835e02cc179412bc64783cabd49adfa4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed6a7c34311bd28c4123c6410eb7df61/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b491d962d9218696bfb431956f0e5bbf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/fec604e6721c227489049e6e627e03c4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7107ec980df550aa4dada0b7dd96f2fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fresco-1.10.0.aar/90f1d3d9f925a603f51d7746a4aa25e9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/1e37958182b4e11454fd2b7d1dbb625b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/drawee-1.10.0.aar/e73839abb5eca2808e35b50639284844/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/fcff782e25b6cdd5f54f4645d4077213/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/dca644a3866fc11c58e868ddbbf2699a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/4028f94ff6906a858712d287ee2ca275/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/android-jsc-r174650.aar/cd2779fcbdd0ef9d81df730f720079d8/AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/89ee8c9ab3cac0bb01652ec2e8a5ac6c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5ce4534cedc26755187c8be27a6136d9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/3ca547c52367e59a9a92bd6b3b6e08ef/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3f50fb62b183a28d1d5fd32ab74284b2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/93bb14435a07521c0f6c1ce0acfd009e/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:1-26:12
@@ -45,22 +47,26 @@ INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidMani
 		ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:lottie-react-native] /home/madura/Documents/InsaneTemp/node_modules/lottie-react-native/src/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:5-67
+MERGED from [:lottie-react-native] /home/madura/Documents/InsaneTemp/node_modules/lottie-react-native/src/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:5-67
 	android:name
 		ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:5:22-75
 application
 ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:7:5-24:19
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/671dcf7bea7f00ff4305efb90d36994d/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/671dcf7bea7f00ff4305efb90d36994d/AndroidManifest.xml:11:5-20
-MERGED from [org.webkit:android-jsc:r174650] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/android-jsc-r174650.aar/fa2037cd3b1e3bcd31d840c91796790f/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/android-jsc-r174650.aar/fa2037cd3b1e3bcd31d840c91796790f/AndroidManifest.xml:2:3-17
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:13:5-20
+MERGED from [com.airbnb.android:lottie:2.5.5] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/lottie-2.5.5.aar/a4c85caadfe5530574d141d7f9399103/AndroidManifest.xml:11:5-20
+MERGED from [com.airbnb.android:lottie:2.5.5] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/lottie-2.5.5.aar/a4c85caadfe5530574d141d7f9399103/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/4028f94ff6906a858712d287ee2ca275/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/4028f94ff6906a858712d287ee2ca275/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/android-jsc-r174650.aar/cd2779fcbdd0ef9d81df730f720079d8/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/android-jsc-r174650.aar/cd2779fcbdd0ef9d81df730f720079d8/AndroidManifest.xml:2:3-17
 	android:label
 		ADDED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml:9:7-39
 	android:icon
@@ -99,48 +105,52 @@ uses-sdk
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml
-MERGED from [:react-native-linear-gradient] /home/madura/Documents/InsaneTemp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /home/madura/Documents/InsaneTemp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /home/madura/Documents/InsaneTemp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /home/madura/Documents/InsaneTemp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/2e917106388a7a3a37a9248201bd80c2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b5b754a1dac6ecd9c013be1b4d2121e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b5b754a1dac6ecd9c013be1b4d2121e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/671b2cbfd64d079ad7e5cf8922dbc2a5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/671b2cbfd64d079ad7e5cf8922dbc2a5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/3b4c606fb0d7cc3eb55f947ad5f1b084/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/3b4c606fb0d7cc3eb55f947ad5f1b084/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/933b163d5f8969ac2fa975671141d064/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/933b163d5f8969ac2fa975671141d064/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b9ef3c25a338b5c4fe034b69592d6602/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b9ef3c25a338b5c4fe034b69592d6602/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/29fc7144d16da17e1b7c1da816efa42a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/29fc7144d16da17e1b7c1da816efa42a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2e238a3c267b189747cbd00f42891542/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2e238a3c267b189747cbd00f42891542/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fresco-1.10.0.aar/3658e6d364d502621fac444a4b424724/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fresco-1.10.0.aar/3658e6d364d502621fac444a4b424724/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b90381c50ea88475e2713df3d619b87b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/b90381c50ea88475e2713df3d619b87b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/drawee-1.10.0.aar/17e2750502a2a6a6628bfe66ac22d543/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/drawee-1.10.0.aar/17e2750502a2a6a6628bfe66ac22d543/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/f09483dabdabf00b4c67aea9117911cf/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/f09483dabdabf00b4c67aea9117911cf/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/0c91f8d08427aa4f935575e3f2db5d2d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/0c91f8d08427aa4f935575e3f2db5d2d/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/671dcf7bea7f00ff4305efb90d36994d/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/671dcf7bea7f00ff4305efb90d36994d/AndroidManifest.xml:7:5-9:41
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/afad70d304f18d564951b81ac1d8c3fa/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/afad70d304f18d564951b81ac1d8c3fa/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/754605b84f56c476245dbb6b830a2e59/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/754605b84f56c476245dbb6b830a2e59/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/76822869b12e694a849f2e1438653a54/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/76822869b12e694a849f2e1438653a54/AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6e11392aa88093f52db2775de5c3f5f4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/6e11392aa88093f52db2775de5c3f5f4/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/36c31011e59c68a2b247f1fb297ff055/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/36c31011e59c68a2b247f1fb297ff055/AndroidManifest.xml:20:5-44
+MERGED from [:lottie-react-native] /home/madura/Documents/InsaneTemp/node_modules/lottie-react-native/src/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-7:41
+MERGED from [:lottie-react-native] /home/madura/Documents/InsaneTemp/node_modules/lottie-react-native/src/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-linear-gradient] /home/madura/Documents/InsaneTemp/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /home/madura/Documents/InsaneTemp/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/madura/Documents/InsaneTemp/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /home/madura/Documents/InsaneTemp/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/react-native-0.57.0.aar/4f5e6ba0dd9bbef0729da4a36a14d6d5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.airbnb.android:lottie:2.5.5] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/lottie-2.5.5.aar/a4c85caadfe5530574d141d7f9399103/AndroidManifest.xml:7:5-9:41
+MERGED from [com.airbnb.android:lottie:2.5.5] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/lottie-2.5.5.aar/a4c85caadfe5530574d141d7f9399103/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f919c125aa97e56370db3ef5a0cc02f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f919c125aa97e56370db3ef5a0cc02f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/03768286ba73d6856c88e163168331d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/03768286ba73d6856c88e163168331d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/835e02cc179412bc64783cabd49adfa4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/835e02cc179412bc64783cabd49adfa4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed6a7c34311bd28c4123c6410eb7df61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/ed6a7c34311bd28c4123c6410eb7df61/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b491d962d9218696bfb431956f0e5bbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/b491d962d9218696bfb431956f0e5bbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/fec604e6721c227489049e6e627e03c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/fec604e6721c227489049e6e627e03c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7107ec980df550aa4dada0b7dd96f2fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7107ec980df550aa4dada0b7dd96f2fd/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fresco-1.10.0.aar/90f1d3d9f925a603f51d7746a4aa25e9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fresco-1.10.0.aar/90f1d3d9f925a603f51d7746a4aa25e9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/1e37958182b4e11454fd2b7d1dbb625b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/1e37958182b4e11454fd2b7d1dbb625b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/drawee-1.10.0.aar/e73839abb5eca2808e35b50639284844/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/drawee-1.10.0.aar/e73839abb5eca2808e35b50639284844/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/fcff782e25b6cdd5f54f4645d4077213/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/fcff782e25b6cdd5f54f4645d4077213/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/dca644a3866fc11c58e868ddbbf2699a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/dca644a3866fc11c58e868ddbbf2699a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/4028f94ff6906a858712d287ee2ca275/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/soloader-0.5.1.aar/4028f94ff6906a858712d287ee2ca275/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/89ee8c9ab3cac0bb01652ec2e8a5ac6c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/89ee8c9ab3cac0bb01652ec2e8a5ac6c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5ce4534cedc26755187c8be27a6136d9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/5ce4534cedc26755187c8be27a6136d9/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/3ca547c52367e59a9a92bd6b3b6e08ef/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/3ca547c52367e59a9a92bd6b3b6e08ef/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3f50fb62b183a28d1d5fd32ab74284b2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/3f50fb62b183a28d1d5fd32ab74284b2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/93bb14435a07521c0f6c1ce0acfd009e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/runtime-1.1.0.aar/93bb14435a07521c0f6c1ce0acfd009e/AndroidManifest.xml:20:5-44
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/madura/Documents/InsaneTemp/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

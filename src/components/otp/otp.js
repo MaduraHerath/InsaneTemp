@@ -7,6 +7,7 @@ import InsInputText from "../../common/InsInputText";
 import InsImage from "../../common/InsImage";
 import InsButton from "../../common/InsButton";
 import SocialButtons from "../SocialButtons";
+import LottieView from 'lottie-react-native';
 
 var width = Dimensions.get('window').width;
 var height = Dimensions.get('window').height;
@@ -28,6 +29,7 @@ export default class Otp extends React.Component {
         console.log("Color",this.state.changeColor)
         this.setState({ changeColor: Math.floor(Math.random() * 5)})
 
+
     }
 
     render() {
@@ -35,31 +37,13 @@ export default class Otp extends React.Component {
         let { changeColor } = this.state;
         console.log("CHCHCHCHCHCHCH",changeColor)
         return (
-            <LinearGradient
-                colors={this.state.colors[4]}
-                start={{x: 0.0, y: 1.0}} end={{x: 1.0, y: 1.0}}
-            >
-                <View style={{width: width * 1, height: height * 1.3}}>
-                    <View>
-                        <InsImage resizeMode={'center'}/>
-                    </View>
-                    <View>
-                        <Text style={styles.welcome}>
-                            Buckminity
-                        </Text></View>
-                    <InsInputText secureTextEntry={false}
-                                  textContentType={'username'}
-                                  placeholder={"OTP Number"}>
-
-                    </InsInputText>
-
-                    <InsButton>
-                        Login
-                    </InsButton>
-
-                </View>
-            </LinearGradient>
-
+            <View style={{height:"100%",width:"100%"}}>
+                    <LottieView
+                    source={require('../../images/animation.json')}
+                    autoPlay
+                    loop
+                    />
+            </View>
         );
     }
 

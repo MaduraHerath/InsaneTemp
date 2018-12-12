@@ -1,28 +1,25 @@
-import React, {Component} from 'react';
-import {
-    Platform,
-    StyleSheet,
-    Text,
-    Animated,
-    Easing
-} from 'react-native';
-import {
-    StackNavigator,
-} from 'react-navigation';
+import React from 'react';
+import {Animated, Easing, StyleSheet} from 'react-native';
+import {StackNavigator,} from 'react-navigation';
 
 import Welcome from "./src/components/welcome/welcome";
 import Home from "./src/components/home/home";
 import Newsfeed from "./src/components/newsfeed/newsfeed";
 import Otp from "./src/components/otp/otp";
 import ResetPassword from "./src/components/passwordReset/resetPassword";
+import {Provider} from "react-redux"
+import configureStore from "./src/configureStore";
 
 
+
+const store = configureStore();
 
 export default class App extends React.Component {
     render() {
         return (
-            <StackView/>
-
+            <Provider store = {store}>
+                <StackView/>
+            </Provider>
         );
     }
 }
@@ -84,7 +81,7 @@ const StackView = StackNavigator({
                     headerTintColor: 'white',
                     headerTransparent: true,
                     headerStyle: {borderBottomWidth: 0, tintColor: '#FAFAFA'},
-                    headerText:"Doctor"
+                    headerText: "Doctor"
                 }
             }
         },

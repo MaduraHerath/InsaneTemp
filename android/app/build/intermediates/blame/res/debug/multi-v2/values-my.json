@@ -4,7 +4,7 @@
             "outputFile": "/home/madura/Documents/InsaneTemp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
             "map": [
                 {
-                    "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2e238a3c267b189747cbd00f42891542/res/values-my/values-my.xml",
+                    "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/7107ec980df550aa4dada0b7dd96f2fd/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b5b754a1dac6ecd9c013be1b4d2121e3/res/values-my/values-my.xml",
+                    "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f919c125aa97e56370db3ef5a0cc02f3/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
