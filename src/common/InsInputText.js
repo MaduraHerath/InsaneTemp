@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Dimensions, StyleSheet, TextInput, View} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 var width = Dimensions.get('window').width;
 var height = Dimensions.get('window').height;
 let backgroundColor = "ffffff";
@@ -12,7 +12,7 @@ export default class InsInputText extends Component {
             <View style={styles.main}>
                 <Icon
                     style={styles.icon}
-                    name='calendar-o'
+                    name={this.props.iconPlaceholder}
                     color='#FAFAFA'
                     size={14}
                 />
@@ -31,7 +31,7 @@ export default class InsInputText extends Component {
                            allowFontScaling={true}
                            underlineColorAndroid={'transparent'}
                            textAlign={'left'}
-                           paddingLeft={6}
+                           paddingLeft={18}
                            placeholderTextColor="#FAFAFA"
                            placeholder={this.props.placeholder}
                            secureTextEntry={this.props.secureTextEntry}

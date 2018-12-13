@@ -9,6 +9,7 @@ import Otp from "./src/components/otp/otp";
 import ResetPassword from "./src/components/passwordReset/resetPassword";
 import {Provider} from "react-redux"
 import configureStore from "./src/configureStore";
+import Login from "./src/components/login/login";
 
 
 
@@ -74,6 +75,13 @@ const StackView = StackNavigator({
                 header: null
             },
         },
+
+        Login: {
+            screen: Login,
+            navigationOptions: {
+                header: null
+            },
+        },
         Home: {
             screen: Home,
             navigationOptions: ({navigation}) => {
@@ -121,7 +129,7 @@ const StackView = StackNavigator({
         }
     },
     {
-        initialRouteName: 'Welcome',
+        initialRouteName: 'Login',
         transitionConfig,
         portraitOnlyMode: true
     });

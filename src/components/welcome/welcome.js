@@ -2,7 +2,7 @@ import React from 'react';
 import {
     Dimensions,
     Image,
-    Picker,
+    Picker, RefreshControl,
     ScrollView,
     StyleSheet,
     Text,
@@ -21,6 +21,7 @@ import InsSpring from "../../common/InsSpring";
 import InsFade from "../../common/InsFade";
 import {connect} from "react-redux";
 import {fetchPeopleFromAPI} from "../../actions";
+import LottieView from 'lottie-react-native';
 
 var width = Dimensions.get('window').width;
 
@@ -177,24 +178,27 @@ class Welcome extends React.Component {
 
                         </LinearGradient>
                     </InsFade>
-                    <ScrollView contentContainerStyle={styles.contentContainer} bounces={true} bouncesZoom={true}>
+                    <ScrollView contentContainerStyle={styles.contentContainer} bounces={true} bouncesZoom={true}  refreshControl={
+                        <RefreshControl
+                            refreshing={isFetching}
+                            onRefresh={ console.log("Loader")}/>}>
                         <View>
                             <InsSpring value={1}
                                        delay={0}>
                                 {
                                     isFetching && <View>
-                                        <Text>Loading ...</Text>
-                                        {/*<LottieView*/}
-                                        {/*source={require('../../images/healthtap_spinner.json')}*/}
-                                        {/*autoPlay*/}
-                                        {/*loop*/}
-                                        {/*/>*/}
+                                        {/*<Text>Loading ...</Text>*/}
+                                        <LottieView
+                                        source={require('../../images/healthtap_spinner.json')}
+                                        autoPlay
+                                        loop
+                                        />
                                     </View>
                                 }
                                 {
                                     people.length ? (
                                         people.map((person, i) => {
-                                            return <View key={i} style={{backgroundColor:"red",margin:10}}>
+                                            return <View key={i} style={{margin:10}}>
                                                 <InsCard
                                                     onPress={() => this.props.navigation.navigate('Home')}
                                                     backgroundEndColor={"#F5F5F5"}
