@@ -190,12 +190,12 @@ class Welcome extends React.Component {
                                        delay={0}>
                                 {
                                     isFetching && <View>
-                                        {/*<Text>Loading ...</Text>*/}
-                                        <LottieView
-                                        source={require('../../images/healthtap_spinner.json')}
-                                        autoPlay
-                                        loop
-                                        />
+                                        <Text>Loading ...</Text>
+                                        {/*<LottieView*/}
+                                        {/*source={require('../../images/healthtap_spinner.json')}*/}
+                                        {/*autoPlay*/}
+                                        {/*loop*/}
+                                        {/*/>*/}
                                     </View>
                                 }
                                 {

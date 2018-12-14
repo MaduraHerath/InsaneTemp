@@ -4,7 +4,7 @@
             "outputFile": "/home/madura/Documents/InsaneTemp/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/f919c125aa97e56370db3ef5a0cc02f3/res/values-v18/values-v18.xml",
+                    "source": "/home/madura/Softwares/gradle-2.3-bin/gradle-2.2.1/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b5b754a1dac6ecd9c013be1b4d2121e3/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
