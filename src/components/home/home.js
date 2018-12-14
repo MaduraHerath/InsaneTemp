@@ -1,9 +1,10 @@
 import React from 'react';
-import {Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
+import {Image, StatusBar, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import InsInputText from "../../common/InsInputText";
 import InsCard from "../../common/InsCard";
 import LinearGradient from "react-native-linear-gradient";
 import InsSpring from "../../common/InsSpring";
+import OfflineNotice from "../../common/OfflineNotice";
 
 
 export default class Home extends React.Component {
@@ -15,9 +16,14 @@ export default class Home extends React.Component {
             <View>
 
                 <View style={styles.instructions}>
+                    <StatusBar
+                        backgroundColor="#00D2FF"
+                        barStyle="light-content"
+                    />
                     <LinearGradient style={styles.header}
                                     colors={["#315AFF","#00D2FF"]}
                                     start={{x: 0.0, y: 0.8}} end={{x: 1.0, y: 0.2}}>
+                        <OfflineNotice/>
                         <View onPress={() => console.log("Clicked!")}
                               style={{borderRadius: 10, padding: 2, margin: 10}}>
                             {this.props.children}

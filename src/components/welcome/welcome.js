@@ -3,7 +3,7 @@ import {
     Dimensions,
     Image,
     Picker, RefreshControl,
-    ScrollView,
+    ScrollView, StatusBar,
     StyleSheet,
     Text,
     TouchableHighlight,
@@ -22,12 +22,13 @@ import InsFade from "../../common/InsFade";
 import {connect} from "react-redux";
 import {fetchPeopleFromAPI} from "../../actions";
 import LottieView from 'lottie-react-native';
+import OfflineNotice from "../../common/OfflineNotice";
 
 var width = Dimensions.get('window').width;
 
 
 class Welcome extends React.Component {
-    componentDidMount() {
+    componentWillMount() {
         this.props.getPeople()
     };
 
@@ -65,10 +66,15 @@ class Welcome extends React.Component {
         return (
             <View>
                 <View style={styles.instructions}>
+                    <StatusBar
+                        backgroundColor="#00D2FF"
+                        barStyle="light-content"
+                    />
                     <InsFade delay={200}>
                         <LinearGradient style={styles.header}
                                         colors={["#315AFF", "#00D2FF"]}
                                         start={{x: 0.0, y: 0.8}} end={{x: 1.0, y: 0.2}}>
+                            <OfflineNotice/>
                             <View onPress={() => console.log("Clicked!")}
                                   style={{borderRadius: 10, padding: 2, margin: 10}}>
                                 {this.props.children}
