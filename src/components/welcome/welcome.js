@@ -100,7 +100,7 @@ class Welcome extends React.Component {
                                         {/*onPress={() => this.props.navigation.navigate('Home')}>*/}
                                         {/*<Text style={{fontFamily: 'Arial', fontSize: 15}}>Appoinments</Text>*/}
                                         {/*</TouchableHighlight>*/}
-                                        <Icon name="chart-bar" size={30} color="#FAFAFA"/>
+                                        <Icon name="chart" size={30} color="#FAFAFA"/>
                                     </View>
                                 </InsFade>
                             </View>
@@ -110,6 +110,8 @@ class Welcome extends React.Component {
                                               placeholder={"Name of the Doctor"}
                                               borderRadius={24}
                                               backgroundColor={"rgba(255, 255, 255, 0.25)"}
+                                              isleftIcon={false}
+                                              iconPlaceholder={"user-md"}
                                               placeholderTextColor='#FAFAFA'>
                                 </InsInputText>
                             </InsFade>
@@ -133,10 +135,11 @@ class Welcome extends React.Component {
 
                                         <Picker
                                             selectedValue={""}
-                                            style={{height: 50, width: "100%"}}>
+                                            iosHeader="Selecione o País"
+                                            style={{height: 50, width: "100%",color:"#FAFAFA"}}>
                                             <Picker.Item label="Neurology" value="java"/>
-                                            <Picker.Item label="Neurology" value="java"/>
-                                            <Picker.Item label="Neurology" value="java"/>
+                                            <Picker.Item label="Another One" value="java"/>
+                                            <Picker.Item label="Love Sick" value="java"/>
                                             <Picker.Item label="Neurology" value="java"/>
                                         </Picker>
                                     </View>
@@ -165,10 +168,10 @@ class Welcome extends React.Component {
                                     justifyContent: "center"
                                 }}>
                                     <TouchableOpacity onPress={this._showDateTimePicker}>
-                                        <Text style={{color: "#FAFAFA", paddingLeft: 10}}>{this.state.date} </Text>
+                                        <Text style={{color: "#FAFAFA", paddingLeft: 10}}>{this.state.date}</Text>
                                         <Icon
                                             style={styles.icon}
-                                            name='calendar-o'
+                                            name='calendar'
                                             color='#FAFAFA'
                                             size={14}
                                         />
@@ -314,7 +317,8 @@ const styles = StyleSheet.create({
     },
     icon: {
         position: "absolute",
-        right: 40
+        right: 4,
+        marginBottom:10
     },
     header: {
         backgroundColor: '#FAFAFA',
