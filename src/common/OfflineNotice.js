@@ -15,10 +15,15 @@ function MiniOfflineSign() {
 
 class OfflineNotice extends PureComponent {
 
+    constructor(props) {
+        super(props);
+        _this = this;
+    }
+
     _handleNetInfo(isConnected) {
         console.log("Props", this.props)
 
-        // isConnected ? this.props.getNetWorkStatus(true) : this.props.getNetWorkStatus(false)
+        isConnected ? _this.props._Netstatus(true) : _this.props._Netstatus(false)
 
     }
 
@@ -62,7 +67,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        getNetWorkStatus: (status) => dispatch(updateNetstatus(status))
+        _Netstatus: (status) => dispatch(updateNetstatus(status))
     }
 };
 export default connect(
