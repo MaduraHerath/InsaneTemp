@@ -20,9 +20,12 @@ import DateTimePicker from 'react-native-modal-datetime-picker';
 import InsSpring from "../../common/InsSpring";
 import InsFade from "../../common/InsFade";
 import {connect} from "react-redux";
-import {fetchPeopleFromAPI} from "../../actions";
-import LottieView from 'lottie-react-native';
+import {fetchPeopleFromAPI} from "../../actions/PeopleActions";
 import OfflineNotice from "../../common/OfflineNotice";
+import {RadioForm} from "react-native-simple-radio-button";
+import InsButton from "../../common/InsButton";
+import InsGradientButton from "../../common/InsGradientButton";
+import DoctorCard from "./DoctorCard";
 
 var width = Dimensions.get('window').width;
 
@@ -76,7 +79,7 @@ class Welcome extends React.Component {
                                         start={{x: 0.0, y: 0.8}} end={{x: 1.0, y: 0.2}}>
                             <OfflineNotice/>
                             <View onPress={() => console.log("Clicked!")}
-                                  style={{borderRadius: 10, padding: 2, margin: 10}}>
+                                  style={{borderRadius: 10, padding: 2, margin: 5}}>
                                 {this.props.children}
 
                             </View>
@@ -196,7 +199,7 @@ class Welcome extends React.Component {
                                        delay={0}>
                                 {
                                     isFetching && <View>
-                                        <Text>Loading ...</Text>
+                                        {/*<Text>Loading ...</Text>*/}
                                         {/*<LottieView*/}
                                         {/*source={require('../../images/healthtap_spinner.json')}*/}
                                         {/*autoPlay*/}
@@ -207,86 +210,11 @@ class Welcome extends React.Component {
                                 {
                                     people.length ? (
                                         people.map((person, i) => {
-                                            return <View key={i} style={{margin:10}}>
-                                                <InsCard
-                                                    onPress={() => this.props.navigation.navigate('Home')}
-                                                    backgroundEndColor={"#F5F5F5"}
-                                                    backgroundStartColor={"#F5F5F5"}
-                                                    margin={5}>
-                                                    <View style={{
-                                                        position: "absolute",
-                                                        right: 0
-                                                    }}>
-                                                        {!this.state.isColllapsed &&
-                                                        <Icon name="arrow-down" size={15} color="#607D8B"
-                                                              style={{textAlign: "right", padding: 10}}
-                                                              onPress={this.collapsible.bind(this)}/>
-                                                        }{this.state.isColllapsed &&
-                                                    <Icon name="arrow-up" size={15} color="#607D8B"
-                                                          style={{textAlign: "right", padding: 10}}
-                                                          onPress={this.collapsible.bind(this)}/>
-                                                    }
-                                                    </View>
-                                                    <View
-                                                        style={{flexDirection: "row", justifyContent: 'space-between'}}>
-                                                        <View
-                                                            style={{flexDirection: 'column', alignItems: "flex-start"}}>
-                                                            <TouchableHighlight
-                                                                onPress={() => this.props.navigation.navigate('Home')}>
-                                                                <InsSpring value={1}
-                                                                           delay={600}>
-                                                                    <Image source={require('../../images/doctor.png')}
-                                                                           resizeMode={this.resizeMode}
-                                                                           style={{
-                                                                               width: 50,
-                                                                               height: 50,
-                                                                               alignItems: "flex-start",
-                                                                               borderRadius: 64
-                                                                           }}/>
-                                                                </InsSpring>
-
-                                                            </TouchableHighlight>
-                                                        </View>
-                                                        <View style={{
-                                                            flexDirection: 'column',
-                                                            padding: 10,
-                                                            width: width * 0.8
-                                                        }}>
-                                                            <View style={{flexDirection: 'row'}}>
-                                                                <View style={styles.cardName}>
-                                                                    <Text
-                                                                        style={{
-                                                                            fontFamily: 'Arial',
-                                                                            fontSize: 15,
-                                                                            textAlign: 'right'
-                                                                        }}>{person.name}</Text>
-                                                                </View>
-
-                                                                <Text style={{
-                                                                    fontFamily: 'Arial',
-                                                                    fontSize: 13,
-                                                                    textAlign: 'right',
-                                                                    padding: 1
-                                                                }}>(Cardiology)</Text>
-
-                                                            </View>
-                                                            <View style={{
-                                                                flexDirection: 'row',
-                                                                justifyContent: 'space-between'
-                                                            }}>
-
-                                                                <Text> Lorem ipsum dolor sit amet, consectetur
-                                                                    adipiscing elit. Nulla
-                                                                    pulvinar semper erat non imperdiet. </Text>
-                                                            </View>
-                                                            {this.state.isColllapsed &&
-                                                            <View>
-                                                                <Text> More Details </Text>
-                                                            </View>
-                                                            }
-                                                        </View>
-                                                    </View>
-                                                </InsCard>
+                                            return <View key={i}>
+                                               <DoctorCard
+                                               data = {person}
+                                               {...this.props}
+                                               />
                                             </View>
                                         })
                                     ) : null

@@ -1,10 +1,10 @@
 import React from 'react';
 import {Animated, Easing, StyleSheet} from 'react-native';
-import {StackNavigator,} from 'react-navigation';
+import {createStackNavigator, StackNavigator,} from 'react-navigation';
 
 import Welcome from "./src/components/welcome/welcome";
 import Home from "./src/components/home/home";
-import Newsfeed from "./src/components/newsfeed/newsfeed";
+import Booking from "./src/components/newsfeed/booking";
 import Otp from "./src/components/otp/otp";
 import ResetPassword from "./src/components/passwordReset/resetPassword";
 import {Provider} from "react-redux"
@@ -12,8 +12,10 @@ import configureStore from "./src/configureStore";
 import Login from "./src/components/login/login";
 
 
-
-const store = configureStore();
+let initialState = {
+    people: []
+}
+const store = configureStore(initialState);
 
 export default class App extends React.Component {
     render() {
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
 });
 
 
-const StackView = StackNavigator({
+const StackView = createStackNavigator({
         Welcome: {
             screen: Welcome,
             navigationOptions: {
@@ -93,8 +95,16 @@ const StackView = StackNavigator({
                 }
             }
         },
-        Newsfeed: {
-            screen: Newsfeed,
+        Booking: {
+            screen: Booking,
+            navigationOptions: ({navigation}) => {
+                return {
+                    headerTintColor: 'white',
+                    headerTransparent: true,
+                    headerStyle: {borderBottomWidth: 0, tintColor: '#FAFAFA'},
+                    headerText: "Booking"
+                }
+            }
 
         },
         Otp: {
@@ -117,16 +127,6 @@ const StackView = StackNavigator({
                 }
             }
         },
-        News: {
-            screen: Newsfeed,
-            navigationOptions: ({navigation}) => {
-                return {
-                    headerTintColor: 'white',
-                    headerTransparent: true,
-                    headerStyle: {borderBottomWidth: 0, tintColor: '#FAFAFA'}
-                }
-            }
-        }
     },
     {
         initialRouteName: 'Login',

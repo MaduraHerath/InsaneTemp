@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Dimensions, StyleSheet, TouchableHighlight,Text, View} from 'react-native';
+import LinearGradient from "react-native-linear-gradient";
 var width = Dimensions.get('window').width;
 var height = Dimensions.get('window').height;
 

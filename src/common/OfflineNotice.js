@@ -1,7 +1,9 @@
-import React, { PureComponent } from 'react';
-import { View, Text, NetInfo, Dimensions, StyleSheet } from 'react-native';
+import React, {PureComponent} from 'react';
+import {Dimensions, NetInfo, StyleSheet, Text, View} from 'react-native';
+import {connect} from "react-redux";
+import {updateNetstatus} from "../actions/NetworkStatusActions";
 
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 function MiniOfflineSign() {
     return (
@@ -12,29 +14,26 @@ function MiniOfflineSign() {
 }
 
 class OfflineNotice extends PureComponent {
-    state = {
-        isConnected: true
-    };
+
+    _handleNetInfo(isConnected) {
+        console.log("Props", this.props)
+
+        // isConnected ? this.props.getNetWorkStatus(true) : this.props.getNetWorkStatus(false)
+
+    }
 
     componentDidMount() {
-        NetInfo.isConnected.addEventListener('connectionChange', this.handleConnectivityChange);
+        console.log("Props", this.props)
+        NetInfo.isConnected.addEventListener('connectionChange', this._handleNetInfo);
     }
 
     componentWillUnmount() {
-        NetInfo.isConnected.removeEventListener('connectionChange', this.handleConnectivityChange);
+        NetInfo.isConnected.removeEventListener('connectionChange', this._handleNetInfo);
     }
 
-    handleConnectivityChange = isConnected => {
-        if (isConnected) {
-            this.setState({ isConnected });
-        } else {
-            this.setState({ isConnected });
-        }
-    };
-
     render() {
-        if (!this.state.isConnected) {
-            return <MiniOfflineSign />;
+        if (!this.props.status) {
+            return <MiniOfflineSign/>;
         }
         return null;
     }
@@ -43,15 +42,30 @@ class OfflineNotice extends PureComponent {
 const styles = StyleSheet.create({
     offlineContainer: {
         backgroundColor: '#b52424',
-        height: 30,
+        height: 20,
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',
         width,
         position: 'absolute',
-        top: 30
+        top: 0
     },
-    offlineText: { color: '#fff' }
+    offlineText: {color: '#fff'}
 });
 
-export default OfflineNotice;
+
+function mapStateToProps(state) {
+    return {
+        status: state.netStatus.connection
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        getNetWorkStatus: (status) => dispatch(updateNetstatus(status))
+    }
+};
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(OfflineNotice)

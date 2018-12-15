@@ -1,13 +1,6 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
+import {Dimensions, StyleSheet, View} from 'react-native';
 
-
-import LinearGradient from 'react-native-linear-gradient';
-import InsInputText from "../../common/InsInputText";
-import InsImage from "../../common/InsImage";
-import InsButton from "../../common/InsButton";
-import SocialButtons from "../SocialButtons";
-import LottieView from 'lottie-react-native';
 
 var width = Dimensions.get('window').width;
 var height = Dimensions.get('window').height;
@@ -18,31 +11,27 @@ export default class Otp extends React.Component {
         super();
         this.state = {
             input: '',
-            colors:[['#654ea3', '#654ea3'],['#FF416C', '#FF4B2B'],['#bc4e9c', '#f80759'],['#8E2DE2', '#4A00E0'],['#141E30', '#243B55'],['#16222A', '#3A6073']],
+            colors: [['#654ea3', '#654ea3'], ['#FF416C', '#FF4B2B'], ['#bc4e9c', '#f80759'], ['#8E2DE2', '#4A00E0'], ['#141E30', '#243B55'], ['#16222A', '#3A6073']],
             changeColor: 0
 
 
         }
 
     }
+
     componentDidMount() {
-        console.log("Color",this.state.changeColor)
-        this.setState({ changeColor: Math.floor(Math.random() * 5)})
+        console.log("Color", this.state.changeColor)
+        this.setState({changeColor: Math.floor(Math.random() * 5)})
 
 
     }
 
     render() {
 
-        let { changeColor } = this.state;
-        console.log("CHCHCHCHCHCHCH",changeColor)
+        let {changeColor} = this.state;
+        console.log("CHCHCHCHCHCHCH", changeColor)
         return (
-            <View style={{height:"100%",width:"100%"}}>
-                    <LottieView
-                    source={require('../../images/animation.json')}
-                    autoPlay
-                    loop
-                    />
+            <View style={{height: "100%", width: "100%"}}>
             </View>
         );
     }
