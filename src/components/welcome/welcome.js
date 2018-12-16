@@ -222,7 +222,8 @@ class Welcome extends React.Component {
 
                             </InsSpring>
                         </View>
-
+                        <Text>  Here is the user token {this.props.token.token}</Text>
+                        <Button title="I'm done, sign me out" onPress={this._signOutAsync} />
                     </ScrollView>
                 </View>
 
@@ -231,6 +232,16 @@ class Welcome extends React.Component {
     }
 }
 
+
+_signOutAsync =  () => {
+    this.props.removeUserToken()
+        .then(() => {
+            this.props.navigation.navigate('Signup');
+        })
+        .catch(error => {
+            this.setState({ error })
+        })
+};
 
 const styles = StyleSheet.create({
     contentContainer: {
@@ -292,13 +303,15 @@ const styles = StyleSheet.create({
 
 function mapStateToProps(state) {
     return {
-        people: state.people
+        people: state.people,
+        token: state.token,
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        getPeople: () => dispatch(fetchPeopleFromAPI())
+        getPeople: () => dispatch(fetchPeopleFromAPI()),
+        removeUserToken: () => dispatch(removeUserToken())
     }
 }
 

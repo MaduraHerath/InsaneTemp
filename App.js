@@ -10,6 +10,7 @@ import ResetPassword from "./src/components/passwordReset/resetPassword";
 import {Provider} from "react-redux"
 import configureStore from "./src/configureStore";
 import Login from "./src/components/login/login";
+import Signup from "./src/components/signup/signup";
 
 
 let initialState = {
@@ -84,8 +85,8 @@ const StackView = createStackNavigator({
                 header: null
             },
         },
-        Home: {
-            screen: Home,
+        Signup: {
+            screen: Signup,
             navigationOptions: ({navigation}) => {
                 return {
                     headerTintColor: 'white',

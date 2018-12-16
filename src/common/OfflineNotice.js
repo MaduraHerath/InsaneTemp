@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import {Dimensions, NetInfo, StyleSheet, Text, View} from 'react-native';
 import {connect} from "react-redux";
 import {updateNetstatus} from "../actions/NetworkStatusActions";
+import InsFade from "./InsFade";
 
 const {width} = Dimensions.get('window');
 
@@ -38,7 +39,7 @@ class OfflineNotice extends PureComponent {
 
     render() {
         if (!this.props.status) {
-            return <MiniOfflineSign/>;
+            return <InsFade><MiniOfflineSign/></InsFade>;
         }
         return null;
     }

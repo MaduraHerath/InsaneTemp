@@ -7,35 +7,39 @@ import InsInputText from "../../common/InsInputText";
 import InsImage from "../../common/InsImage";
 import InsButton from "../../common/InsButton";
 import SocialButtons from "../SocialButtons";
-import ResetPassword from "../passwordReset/resetPassword";
 import OfflineNotice from "../../common/OfflineNotice";
+import {connect} from "react-redux";
 
 var width = Dimensions.get('window').width;
 var height = Dimensions.get('window').height;
 
-export default class Login extends React.Component {
+class Signup extends React.Component {
 
     constructor() {
         super();
         this.state = {
             input: '',
             changeColor: 0
-
-
         }
-
     }
 
     componentDidMount() {
-        console.log("Color", this.state.changeColor)
-        this.setState({changeColor: Math.floor(Math.random() * 5)})
-
+        this._bootstrapAsync();
     }
 
-    render() {
+    // Fetch the token from storage then navigate to our appropriate place
+    _bootstrapAsync = () => {
 
-        let {changeColor} = this.state;
-        console.log("CHCHCHCHCHCHCH", changeColor)
+        this.props.getUserToken().then(() => {
+            this.props.navigation.navigate(this.props.token.token !== null ? 'App' : 'Auth');
+        })
+            .catch(error => {
+                this.setState({ error })
+            })
+
+    };
+
+    render() {
         return (<View>
                 <StatusBar
                     backgroundColor="#00D2FF"
@@ -64,6 +68,26 @@ export default class Login extends React.Component {
                                       placeholderTextColor='#FAFAFA'>
 
                         </InsInputText>
+                        <InsInputText secureTextEntry={false}
+                                      textContentType={'username'}
+                                      placeholder={"First Name"}
+                                      borderRadius={24}
+                                      isleftIcon={false}
+                                      iconPlaceholder={"user"}
+                                      backgroundColor={"rgba(255, 255, 255, 0.25)"}
+                                      placeholderTextColor='#FAFAFA'>
+
+                        </InsInputText>
+                        <InsInputText secureTextEntry={false}
+                                      textContentType={'username'}
+                                      placeholder={"Last Name"}
+                                      borderRadius={24}
+                                      isleftIcon={false}
+                                      iconPlaceholder={"user"}
+                                      backgroundColor={"rgba(255, 255, 255, 0.25)"}
+                                      placeholderTextColor='#FAFAFA'>
+
+                        </InsInputText>
                         <InsInputText secureTextEntry={true}
                                       textContentType={'password'}
                                       placeholder={"Password"}
@@ -73,28 +97,24 @@ export default class Login extends React.Component {
                                       backgroundColor={"rgba(255, 255, 255, 0.25)"}
                                       placeholderTextColor='#FAFAFA'>
                         </InsInputText>
-                        <View style={styles.forget}>
-                            <Text style={styles.forget}>
-                                Those who dumb to remember their password
-
-                            </Text>
-                            <Text style={styles.centerWhiteText} onPress={() => {
-                                this.props.navigation.navigate('ResetPassword')
-                            }}>
-                                Click Here
-                            </Text>
-                        </View>
+                        <InsInputText secureTextEntry={true}
+                                      textContentType={'password'}
+                                      placeholder={"Re-Password"}
+                                      borderRadius={24}
+                                      isleftIcon={false}
+                                      iconPlaceholder={"fingerprint"}
+                                      backgroundColor={"rgba(255, 255, 255, 0.25)"}
+                                      placeholderTextColor='#FAFAFA'>
+                        </InsInputText>
 
                         <InsButton onNavigate='Welcome' {...this.props}>
-                            Login
+                            SignUp
                         </InsButton>
-
-                        <Text style={styles.centerWhiteText}>OR</Text>
 
                         <View style={{flexDirection: 'row'}}>
                             <View style={{alignItems: 'flex-start'}}>
-                                <InsButton onNavigate="Signup" {...this.props}>
-                                    SignUp
+                                <InsButton onNavigate="Login" {...this.props}>
+                                    Login
                                 </InsButton>
 
                             </View>
@@ -174,3 +194,14 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     }
 });
+
+const mapStateToProps = state => ({
+    token: state.token,
+});
+
+
+const mapDispatchToProps = dispatch => ({
+    getUserToken: () => dispatch(getUserToken()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Signup);
